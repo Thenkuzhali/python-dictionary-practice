@@ -48,11 +48,31 @@ for num in list_of_numbers:
 print(count)
 
 """4. Find the most frequent element."""
-
+data = [1,3,3,4,5,6,6,6,7]
+freq = {}
+for item in data:
+    freq[item]= freq.get(item, 0)+1
+    
+print(max(freq, key=freq.get))
 
 """5. Find the least frequent element."""
+print(min(freq, key=freq.get))
 
 """6. Count vowels in a string using a dictionary."""
+
+string = "Hello world"
+vowels_count ={k: 0 for k in 'aeiou'}
+for i in string.casefold():
+    if i in vowels_count:
+        vowels_count[i] +=1
+        
+print(vowels_count)
+
+# dictionary comprehension
+
+print(string.count('o'))
+vow_count={key : string.count(key) for key in "aeiou"}
+print(vow_count)
 
 """7. Count uppercase and lowercase letters."""
 
