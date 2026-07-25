@@ -75,6 +75,13 @@ vow_count={key : string.count(key) for key in "aeiou"}
 print(vow_count)
 
 """7. Count uppercase and lowercase letters."""
+case_count = {"u":0, "l":0}
+for char in string:
+    if char.isupper():
+        case_count['u']+=1
+    elif char.islower():
+        case_count["l"]+=1
+print(case_count)
 
 """8. Count positive and negative numbers."""
 
