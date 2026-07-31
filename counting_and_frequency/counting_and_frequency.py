@@ -75,9 +75,44 @@ vow_count={key : string.count(key) for key in "aeiou"}
 print(vow_count)
 
 """7. Count uppercase and lowercase letters."""
-
+string = "HELLO world"
+upper_and_lower_case_count={"upper":0, "lower": 0}
+for char in string:
+    if char.isupper():
+        upper_and_lower_case_count["upper"]+=1
+    elif char.islower():
+        upper_and_lower_case_count["lower"]+=1
+    
+print(upper_and_lower_case_count)
+    
 """8. Count positive and negative numbers."""
+num_list = [1, 2, -8, 7, -3]
+num_list_dict = {"positive":0, "negative":0}
+for i in num_list:
+    if i>0:
+        num_list_dict["positive"]+=1
+    elif i<0:
+        num_list_dict["negative"]+=1
+print(num_list_dict)
 
 """9. Create a histogram using a dictionary."""
+histogram = {}
+for char in string:
+    histogram[char]= histogram.get(char, 0)+1
+    
+print(histogram)
 
 """10. Count duplicate values in a dictionary."""
+student_marks = {
+    "Alice": 90,
+    "Bob": 85,
+    "Charlie": 90,
+    "David": 80,
+    "Eva": 85,
+    "Frank": 90
+}
+
+val_counts={}
+
+for value in student_marks.values():
+    pass
