@@ -122,4 +122,7 @@ student_marks = {
 val_counts={}
 
 for value in student_marks.values():
-    pass
+    val_counts[value] = val_counts.get(value, 0) + 1
+    
+filter_dup = {val: count for val, count in val_counts.items() if count>1}
+print(filter_dup)
