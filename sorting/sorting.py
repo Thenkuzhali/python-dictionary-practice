@@ -12,10 +12,16 @@
 """
 
 # 1. Sort dictionary by keys.
+contact_book = {"name": "Then", "mobile": 8500085000, "email": "then@example.com"}
+sort_by_key = {k: v for k, v in sorted(contact_book.items())}
 
+print(sort_by_key)
 
 # 2. Sort dictionary by values.
 
+fruits = {'a': 'apple', 'b':'banana', 'd':'dragon fruit', 'c': 'cherry'}
+sort_by_values = dict(sorted(fruits.items()), key=lambda item: item[1])
+print(sort_by_values)
 
 #3. Sort dictionary by key in descending order.
 
@@ -26,4 +32,4 @@
 #7. Sort nested dictionaries.
 #8. Sort dictionary items alphabetically.
 #9. Sort by length of values.
-#10. Sort a dictionary containing string values.
+#10. Sort a dictionary containing string values.    
