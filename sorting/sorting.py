@@ -20,11 +20,12 @@ print(sort_by_key)
 # 2. Sort dictionary by values.
 
 fruits = {'a': 'apple', 'b':'banana', 'd':'dragon fruit', 'c': 'cherry'}
-sort_by_values = dict(sorted(fruits.items()), key=lambda item: item[1])
+sort_by_values = dict(sorted(fruits.items(), key=lambda item: item[1]))
 print(sort_by_values)
 
 #3. Sort dictionary by key in descending order.
-
+reverse_sort = dict(sorted(fruits.items(), reverse=True, key=lambda item: item[1]))
+print(reverse_sort)
 
 #4. Sort dictionary by value in descending order.
 #5. Get top 3 highest values.
