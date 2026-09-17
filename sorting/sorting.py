@@ -24,10 +24,13 @@ sort_by_values = dict(sorted(fruits.items(), key=lambda item: item[1]))
 print(sort_by_values)
 
 #3. Sort dictionary by key in descending order.
-reverse_sort = dict(sorted(fruits.items(), reverse=True, key=lambda item: item[1]))
+reverse_sort = dict(sorted(fruits.items(), reverse=True))
 print(reverse_sort)
 
 #4. Sort dictionary by value in descending order.
+reverse_sort_values = dict(sorted(fruits.items(), key=lambda item: item[1], reverse=True))
+print(reverse_sort_values)
+
 #5. Get top 3 highest values.
 #6. Get top 3 lowest values.
 #7. Sort nested dictionaries.
