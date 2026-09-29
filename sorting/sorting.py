@@ -32,7 +32,14 @@ reverse_sort_values = dict(sorted(fruits.items(), key=lambda item: item[1], reve
 print(reverse_sort_values)
 
 #5. Get top 3 highest values.
+my_dict = {'a': 10, 'b': 50, 'c': 20, 'd': 70, 'e': 15}
+top_3_highest_value = dict((sorted(my_dict.items(), key=lambda x: x[1], reverse=True))[:3])
+print(top_3_highest_value)
+
 #6. Get top 3 lowest values.
+top_3_lowest_value = dict((sorted(my_dict.items(), key=lambda x: x[1]))[:3])
+print(top_3_lowest_value)
+
 #7. Sort nested dictionaries.
 #8. Sort dictionary items alphabetically.
 #9. Sort by length of values.
