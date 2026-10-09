@@ -41,6 +41,16 @@ top_3_lowest_value = dict((sorted(my_dict.items(), key=lambda x: x[1]))[:3])
 print(top_3_lowest_value)
 
 #7. Sort nested dictionaries.
+nested_dict = {
+    'A': {'score': 85, 'age': 25},
+    'B': {'score': 92, 'age': 30},
+    'C': {'score': 78, 'age': 27}
+}
+sort_by_score = dict((sorted(nested_dict.items(), key=lambda x: x[1]['score'])))
+sort_by_age = dict((sorted(nested_dict.items(), key=lambda item: item[1]['age'])))
+print(sort_by_score)
+print(sort_by_age)
+
 #8. Sort dictionary items alphabetically.
 #9. Sort by length of values.
 #10. Sort a dictionary containing string values.    
