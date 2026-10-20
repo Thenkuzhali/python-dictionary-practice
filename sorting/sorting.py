@@ -52,5 +52,16 @@ print(sort_by_score)
 print(sort_by_age)
 
 #8. Sort dictionary items alphabetically.
+data = {"zebra": 1, "apple": 5, "monkey": 3, "cherry": 2 }
+# sort by key
+alphabetical_sort = dict(sorted(data.items()))
+print(alphabetical_sort)
+
+# sort by value
+colors = {"item1": "yellow", "item2": "blue", "item3": "red", "item4": "green"}
+value = dict(sorted(colors.items(), key=lambda item: item[1]))
+print(value)
+
 #9. Sort by length of values.
+
 #10. Sort a dictionary containing string values.    
