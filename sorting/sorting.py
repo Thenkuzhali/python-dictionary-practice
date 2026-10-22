@@ -63,5 +63,9 @@ value = dict(sorted(colors.items(), key=lambda item: item[1]))
 print(value)
 
 #9. Sort by length of values.
+sorting_by_length = dict(sorted(colors.items(), key=lambda item: len(item[1])))
+print(sorting_by_length)
 
-#10. Sort a dictionary containing string values.    
+#10. Sort a dictionary containing string values. 
+sort_by_string_values = dict(sorted(colors.items(), key=lambda item: item[1]))
+print(sort_by_string_values)
